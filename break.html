@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>break</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+	<p>点击按钮，测试带有break语句的循环。</p>
+	<button onclick="myFunction()">点击这里</button>
+    <p id="demo"></p>
+	<script>
+		function myFunction()
+        {
+        	var x="",i=0;
+        	for(i=0;i<10;i++)
+        	{
+        		if(i==3)
+        		{
+        			break;
+        		}
+        		x=x + "The number is " + i + "<br>";
+        	}
+        	document.getElementById("demo").innerHTML=x;
+        }
+	</script>
+</body>
+</html>
