@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>continue</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+	
+	<p>点击下面的按钮来执行循环，该循环会跳过i=3。</p>
+
+	<button onclick="myFunction()">点击这里</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction()
+		{
+			var x="";
+			for(var i=0;i<10;i++)
+			{
+				if(i==3)
+					continue;
+				x=x + "The number is " + i + "<br>";
+			}
+			document.getElementById("demo").innerHTML=x;
+		}
+	</script>
+</body>
+</html>
