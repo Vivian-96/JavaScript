@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>blocks</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+	
+	<h1>My Web Page</h1>
+
+	<p id="myPar">I am a paragraph.</p>
+	<div id="myDiv">I am a div.</div>
+
+	<p>
+		<button type="button" onclick="myFunction()">点击这里</button>
+	</p>
+
+	<script type="text/javascript">
+		function myFunction()
+		{
+			document.getElementById("myPar").innerHTML="Hello Word";
+			document.getElementById("myDiv").innerHTML="How are you?";
+		}
+	</script>
+
+	<p>当您点击上面的按钮时，两个元素都会发生改变。</p>
+</body>
+</html>
