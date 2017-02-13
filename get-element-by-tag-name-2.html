@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>get element by tag name</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<p>Hello World!</p>
+
+<div id="main">
+<p>DOM is very useful!</p>
+<p>This is a method.</p>
+</div>
+
+<script type="text/javascript">
+x = document.getElementById("main").getElementsByTagName("p");
+document.write("div中的第一段文本是 " + x[0].innerHTML);
+</script>
+</body>
+</html>
