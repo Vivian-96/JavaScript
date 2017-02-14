@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>document open</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+function createNewDoc()
+{
+	var newDoc = document.open("text/html","replace");
+	var txt = "<html><body>Learning DOM is interesting.</body></html>";
+	newDoc.write(txt);
+	newDoc.close();
+}
+</script>
+</head>
+
+<body>
+	
+<input type="button" value="打开并写入一个新文档" onclick="createNewDoc()">
+</body>
+</html>
