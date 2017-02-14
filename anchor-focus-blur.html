@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>anchor focus blur</title>
+<meta charset="utf-8">
+<style type="text/css">
+	a:active {color: green;}
+</style>
+
+<script type="text/javascript">
+	function getFocus()
+	{
+		document.getElementById('myAnchor').focus()
+	}
+	function loseFocus()
+	{
+		document.getElementById('myAnchor').blur()
+	}
+</script>
+</head>
+
+<body>
+	
+<a id="myAnchor" href="http://www.w3school.com.cn">访问W3School.com.cn</a>
+<br /><br />
+<input type="button" onclick="getFocus()" value="获得焦点">
+
+<input type="button" onclick="loseFocus()" value="失去焦点">
+</body>
+</html>
