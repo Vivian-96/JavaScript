@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Function Arguments Example</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+		function doAdd()
+		{
+			if (arguments.length == 1)
+			{
+				alert(arguments[0] + 10);
+			}
+			else if (arguments.length == 2)
+			{
+				alert(arguments[0] + arguments[1]);
+			}
+		}
+
+		doAdd(10);
+		doAdd(30, 20);
+	</script>
+</body>
+</html>
