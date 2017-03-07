@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Example of Unary Plus Minus</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+	var s1 = "01";
+	var s2 = "1.1";
+	var s3 = "z";
+	var b = false;
+	var f = 1.1;
+	var o = {
+		valueOf: function(){
+			return -1;
+		}
+	};
+
+	s1 = +s1;
+	alert(s1);
+	s2 = +s2;
+	alert(s2);
+	s3 = +s3;
+	alert(s3);
+	b = +b;
+	alert(b);
+	f = +f;
+	alert(f);
+	o = +o;
+	alert(o);
+	</script>
+</body>
+</html>
