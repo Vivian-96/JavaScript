@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Label In Break Statement Example</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var num = 0;
+
+		outermost:
+		for (var i = 0; i < 10; i++)
+		{
+			for (var j = 0; j < 10; j++)
+			{
+				if (i == 5 && j == 5)
+				{
+					break outermost;
+				}
+				num++;
+			}
+		}
+
+		alert(num);
+	</script>
+</body>
+</html>
+</html>
