@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Execution Context Example</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var color = "blue";
+
+		function changeColor()
+		{
+			if (color === "blue")
+			{
+				color = "red";
+			}
+			else
+			{
+				color = "blue";
+			}
+		}
+
+		changeColor();
+
+		alert("Color is now " + color);
+	</script>
+</body>
+</html>
