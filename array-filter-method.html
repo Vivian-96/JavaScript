@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Array Filter method</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var numbers = [1,2,3,4,5,4,3,2,1];
+		var filterResult = numbers.filter(function(item, index, array)
+		{
+			return (item > 2);
+		});
+
+		alert(filterResult);
+	</script>
+</body>
+</html>
