@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Array Every and Some method</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var numbers = [1,2,3,4,5,4,3,2,1];
+		var everyResult = numbers.every(function(item, index, array)
+		{
+			return (item > 2);
+		});
+
+		alert(everyResult);
+
+		var someResult = numbers.some(function(item, index, array)
+		{
+			return (item > 2);
+		});
+
+		alert(someResult);
+	</script>
+</body>
+</html>
