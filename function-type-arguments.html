@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Function Type Arguments</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+		function factorial(num)
+		{
+			if (num <= 1)
+			{
+				return 1;
+			}
+			else
+			{
+				return num * arguments.callee(num-1);
+			}
+		}
+
+		var trueFactorial = factorial;
+
+		factorial = function()
+		{
+			return 0;
+		};
+
+		alert(trueFactorial(5));
+		alert(factorial(5));
+	</script>
+</body>
+</html>
