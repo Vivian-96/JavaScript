@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Global Object URI Encoding</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var uri = "http://www.wrox.com/illegal value.htm#start";
+		alert(encodeURI(uri));
+
+		alert(encodeURIComponent(uri));
+	</script>
+</body>
+</html>
