@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>String Type localeCompare Method</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+	    var stingValue = "yellow";
+		function determineOrder(value)
+		{
+			var result = stingValue.localeCompare(value);
+			if (result < 0)
+			{
+				alert("The string 'yellow' comes before the string '" + value + "'.");
+			}
+			else if (result > 0)
+			{
+				alert("The string 'yellow' comes after the string '" + value + "'.");
+			}
+			else 
+			{
+				alert("The string 'yellow' is equal to the string '" + value + "'.");
+			}
+		}
+
+		determineOrder("brick");
+		determineOrder("yellow");
+		determineOrder("zoo");
+	</script>
+</body>
+</html>
