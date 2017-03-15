@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Math Object Random</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+	    function selectFrom(lowerValue, upperValue)
+	    {
+	    	var choices = upperValue - lowerValue + 1;
+	    	return Math.floor(Math.random() * choices + lowerValue);
+	    }
+		var colors = ["red", "green", "blue", "yellow", "black", "purple", "brown"];
+		var color = colors[selectFrom(0,colors.length-1)];
+		alert(color);
+	</script>
+</body>
+</html>
