@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Nubmer Type</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+	    var num1 = 99;
+	    alert(num1.toPrecision(1));
+	    alert(num1.toPrecision(2));
+	    alert(num1.toPrecision(3));
+	    var num0 = 10.005;
+	    alert(num0.toFixed(2));
+		var num = 10;
+		alert(num.toExponential(1));
+		alert(num.toFixed(2));
+		alert(num.toString());
+		alert(num.toString(2));
+		alert(num.toString(8));
+		alert(num.toString(10));
+		alert(num.toString(16));
+
+		var numberObject = new Number(10);
+		var numberValue = 10;
+		alert(typeof numberObject);
+		alert(typeof numberValue);
+		alert(numberObject instanceof Number);
+		alert(numberValue instanceof Number);
+	</script>
+</body>
+</html>
