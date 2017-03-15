@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>String Type Location Methods</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var stringValue = "hello world";
+		alert(stringValue.indexOf("o"));
+		alert(stringValue.lastIndexOf("o"));
+
+		alert(stringValue.indexOf("o", 6));
+		alert(stringValue.lastIndexOf("o", 6));
+
+		var stringValue1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit";
+		var positions = new Array();
+		var pos = stringValue1.indexOf("e");
+
+		while(pos > -1)
+		{
+			positions.push(pos);
+			pos = stringValue1.indexOf("e", pos + 1);
+		}
+
+		alert(positions);
+        var stringValue2 = " hello world";
+		var trimmedStringValue = stringValue2.trim();
+		alert(stringValue2);
+		alert(trimmedStringValue);
+	</script>
+</body>
+</html>
